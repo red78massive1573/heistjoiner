@@ -17,7 +17,7 @@ class HeistJoiner(commands.Cog):
                         and self.bot.config_dict["heistjoiner"]["lifesavers"]["state"]
                     ):
                         await self.bot.click(message, 0, 0)
-                        time.sleep(90) #i use blocking method to pause all process on other cogs and main file
+                        time.sleep(90) # I use blocking method to pause all process on other cogs and main file
                 except KeyError:
                     pass
 
