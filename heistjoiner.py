@@ -14,7 +14,7 @@ class HeistJoiner(commands.Cog):
                 try:
                     if (
                         embed["title"] == "is starting a bank robbery"
-                        and self.bot.config_dict["autoheist"]["lifesavers"]["state"]
+                        and self.bot.config_dict["heistjoiner"]["lifesavers"]["state"]
                     ):
                         await self.bot.click(message, 0, 0)
                         time.sleep(90) #i use blocking method to pause all process on other cogs and main file
