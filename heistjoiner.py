@@ -13,7 +13,7 @@ class HeistJoiner(commands.Cog):
                 embed = embed.to_dict()
                 try:
                     if (
-                        embed["title"] == "is starting a bank robbery"
+                        "is starting a bank robbery" in embed["title"]
                         and self.bot.config_dict["heistjoiner"]["state"]
                     ):
                         await self.bot.click(message, 0, 0)
